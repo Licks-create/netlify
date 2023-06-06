@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/index.css">
+<body>
+    <h1>School Admission Form</h1>
+    <form action="http://localhost:5000/login" method="POST">
+        <div>
+            Student's name: <input name="Student" type="text" id="stName" required>
+        </div>
+        <br>
+        <div>
+            Student's Age: <input type="number">
+        </div>
+        <br>
+        <div>
+            Student's Gender: <input type="radio" name="gender">Male
+                              <input type="radio" name="gender">Female
+        </div>
+        <br>
+        <div>
+            BUS SERVICE REQUIRED <input type="checkbox" name="bus">
+            TUTION REQUIRED      <input type="checkbox" name="TUTION">
+        </div>
+        <br>
+        <div>
+            I AM FROM :
+            <select name="select" id="" required> 
+                <option value="">select one</option>
+
+            <optgroup name="opt1" label="uttar pradesh">
+                <option name="VARANASI">VARANASI</option>
+                <option name="mgs">MUGHALSARAI</option>
+            </optgroup>
+            
+            <optgroup label="jharkhand">
+                <option >JAMSHEDPUR</option>
+                <option >BUXAR</option>
+                <option >BILASPUR</option>
+            </optgroup>
+
+                <option value="">NONE</option>
+            </select>
+        </div>
+        <br>
+        <button type="submit">
+                save submission
+        </button>
+        <input type="reset" value="reset" id="reset">
+        <a href="/get.html">Get Your Data</a>
+    </form>
+</body>
+
+
+<script src="/index.js">
+</script>
+</html>
